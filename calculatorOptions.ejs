@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Calculator Options</title>
+  
+  <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  max-width: 100%;
+  background-image: url('https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YnVkZ2V0fGVufDB8fDB8fHww&w=1000&q=80'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid hsl(241, 98%, 52%);
+  border-radius: 5px;
+  background-color: rgb(205, 242, 255);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+h2 {
+  margin-top: 20px;
+}
+img{
+  max-width: 100%;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Choose a calculator:</h1>
+  <form method="post" action="/calculator">
+    <label>
+      <input type="radio" name="calculatorOption" value="SimpleInterest">
+      Simple Interest Calculator
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="calculatorOption" value="CompoundInterest">
+      CompoundInterest Calculator
+    </label>
+    <br>
+    <input type="submit" value="Go">
+  </form>
+</body>
+</html>
